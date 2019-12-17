@@ -6,8 +6,8 @@ class App extends Component{
 
   state ={
     animals: [
-      {name: "Snake", description: "Sssssnake"},
-      {name: "Turtle", description: "Ttttttturtle"}
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Turtle", description: "Ttttttturtle", picture: 'pic'}
     ]
   }
 
