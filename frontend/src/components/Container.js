@@ -12,9 +12,9 @@ function Container(props){
         )
     })
     return(
-        <>
+        <div className="card-container">
             {allAnimals}
-        </>
+        </div>
     )
 }
 
