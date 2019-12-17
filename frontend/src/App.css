@@ -1,11 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: url("./au_map.png") center fixed no-repeat;
   background-size: 100% 100%;
 }
 
 .card-container {
+  margin: 10%;
   display: grid;
-  grid-template-columns:  repeat(3, 25fr 25fr);
+  grid-template-columns:  repeat(3, 10fr 10fr);
 }
 
 .animal-card {
@@ -14,22 +20,47 @@ body {
   padding: 5em;
   flex-direction: column;
   border: none;
+  width: 5%;
 }
 
 .info {
   display: flex;
+  border-radius: 15%;
   flex-direction: column;
   background: rgb(167, 197, 236);
-  opacity: 0.7;
+  opacity: 0.9;
   border: solid 1px rgb(227, 230, 228);
-  height: 16rem;
-  width: 16rem;
-  border-radius: 15%;
+  height: 20rem;
+  width: 20rem;
   border: 1px black;
   align-items: center;
   justify-content: space-evenly;
+  /* z-index:100;
+  outline: 9999px solid rgba(0, 0, 0, 0.692); */
 }
 
-.name, .description {
+.picture:hover {
+  cursor: pointer;
+  height: 15rem;
+  width: 15rem;
+}
 
+.picture {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 15%;
+}
+  
+.description {
+  padding: 1rem;
+}
+
+
+.danger-level {
+  color: red;
+}
+
+.name {
+  text-align: center;
+  word-wrap: wrap;
 }
