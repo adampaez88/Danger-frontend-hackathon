@@ -8,14 +8,16 @@ class Card extends Component{
 
     render(){
         const {isClicked} = this.state
-        const {name, description, picture} = this.props.animal
+        const {name, description, photo, location, danger_level} = this.props.animal
         return(
             <>
-                <img onClick={() => this.setState({isClicked: !isClicked})} src='snake.jpg' className='picture'/>
+                <img onClick={() => this.setState({isClicked: !isClicked})} src={photo} className='picture'/>
                 {isClicked ? (
                 <div className="info">
-                    <p1 className="name">{name}</p1>
-                    <p2 className="description">{description}</p2>
+                    <h1 className="name">{name}</h1>
+                    <p className="description">{description}</p>
+                    <h4 className="danger-level">Danger level: {danger_level}</h4>
+                    <p className="location">{location}</p>
                 </div>
                 ) : null}
             </>

@@ -5,31 +5,15 @@ import Container from "./components/Container";
 class App extends Component{
 
   state ={
-    animals: [
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
-      {name: "Turtle", description: "Ttttttturtle", picture: 'pic'}
-    ]
+    animals: []
   }
 
   componentDidMount(){
-
+    fetch("http://[::1]:3000/animals")
+      .then(response => response.json())
+      .then(animals => this.setState({
+          animals: animals
+    }))
   }
 
   render(){
