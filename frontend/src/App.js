@@ -7,6 +7,23 @@ class App extends Component{
   state ={
     animals: [
       {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
+      {name: "Snake", description: "Sssssnake", picture: 'snake.jpg'},
       {name: "Turtle", description: "Ttttttturtle", picture: 'pic'}
     ]
   }
